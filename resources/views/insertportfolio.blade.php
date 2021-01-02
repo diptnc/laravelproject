@@ -19,11 +19,11 @@
         </div>
         <div class="form-group">
             <label for="exampleFormControlInput1">Title</label>
-            <input type="text" class="form-control" name="title" placeholder="title" rows="3">
+            <textarea type="text" class="form-control" name="title" placeholder="title" rows="1"></textarea>
           </div>
           <div class="form-group">
             <label for="exampleFormControlInput1">Description</label>
-            <input type="text" class="form-control" name="description" placeholder="description">
+            <textarea type="text" class="form-control" name="description" rows="3" placeholder="description"></textarea>
           </div>
           <div class="form-group">
             <label for="exampleFormControlInput1">Main image</label>

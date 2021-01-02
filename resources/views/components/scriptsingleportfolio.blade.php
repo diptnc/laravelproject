@@ -19,46 +19,4 @@ crossorigin="anonymous"></script>
 
 
 <script src="{{ asset('assets/js/header.min.js') }}"></script>
-<script src="{{ asset('assets/js/portfolio.min.js') }}"></script>
-<script>
-    $(document).ready(function() {
-     $(".container").imagesLoaded(function() {
-        var $container = $("#portfolio-grid").isotope({
-            itemSelector: ".item",
-            isFitWidth: true
-        });
-
-        $(window).resize(function() {
-            $container.isotope({
-                columnWidth: ".col-sm-3"
-            });
-        });
-
-        $container.isotope({
-            filter: "*"
-        });
-
-        $("#filters").on("click", "a", function(e) {
-            e.preventDefault();
-            var filterValue = $(this).attr("data-filter");
-            $container.isotope({
-                filter: filterValue
-            });
-            $("#filters a").removeClass("active");
-            $(this).addClass("active");
-        });
-
-        var iso = $container.data("isotope");
-
-        var elem = document.querySelector("#portfolio-grid");
-        var infScroll = new InfiniteScroll(elem, {
-            // options
-            path: "?page=@{{#}}",
-            append: ".item",
-            outlayer: iso,
-
-            history: false,
-            status: ".page-load-status"
-        });
-    });
-</script>
+{{-- <script src="{{ asset('assets/js/portfolio.min.js') }}"></script> --}}

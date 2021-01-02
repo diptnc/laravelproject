@@ -6,10 +6,18 @@ use App\Http\Controllers\homeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\portfolioController;
 use App\Http\Controllers\singleportfolioController;
+use App\Http\Controllers\singleachivementsController;
 use App\Http\Controllers\privacypolicyController;
 use App\Http\Controllers\termsandconditionController;
+use App\Http\Controllers\insertportfolioController;
+use Illuminate\Support\Facades\App;
+use PharIo\Manifest\Url;
+
+
 
 use Spatie\Sitemap\SitemapGenerator;
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -38,6 +46,10 @@ Route::get('/portfoliopage', [portfolioController::class, 'index']);
 
 // single portfolio
 Route::get('portfolio/{portfolio_page}', [singleportfolioController::class, 'index']);
+
+// single achivements
+Route::get('achivements/{achivements_page}', [singleachivementsController::class, 'index']);
+
 // privacy policy
 // Route::get('/privacypolicy', [privacypolicyController::class, 'index']);
 Route::get('/privacyPolicy', [privacypolicyController::class, 'index']);
@@ -46,6 +58,13 @@ Route::get('/privacyPolicy', [privacypolicyController::class, 'index']);
 Route::get('/test',function () {
     return view('components.splash-screen');
 });
+
+//add portfolio item
+Route::get('/insertportfolio', [insertportfolioController::class, 'index']);
+
+Route::post('/addportfolioitem', [insertportfolioController::class, 'insertEntry']);
+
+
 //sitemap
 Route::get('sitemap', function() {
 

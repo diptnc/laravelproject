@@ -22,29 +22,11 @@
     'pg_portfolio_items'=>$pg_portfolio_items])
     @endcomponent
 
-
-
-
-
-
-
-
-
     @component('components.footer',[
     'social_links_raw'=>$social_links_raw
-])
+    ])
     
 @endcomponent
-
-
-   
-     
-
-
-
-
-
-
 
 @component('components.scriptportfoliopage')
 @endcomponent

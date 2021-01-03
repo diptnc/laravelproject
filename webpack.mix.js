@@ -2,7 +2,7 @@ import { js, sass } from 'laravel-mix';
 
 /*
  |--------------------------------------------------------------------------
- | Mix Asset Managementffff
+ | Mix Asset Managementfffff
  |--------------------------------------------------------------------------
  |
  | Mix provides a clean, fluent API for defining some Webpack build steps

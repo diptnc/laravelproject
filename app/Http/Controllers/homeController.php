@@ -22,7 +22,7 @@ class homeController extends Controller
     $social_links_raw = DB::select('select * from social_links');
     //dd($users);
     $about_raw = DB::select('select * from about');
-    $portfolio_raw = DB::select("SELECT * FROM `portfolio` WHERE `isfeatured`='yes' order by `date` DESC Limit 6");
+    $portfolio_raw = DB::select("SELECT * FROM `portfolio` WHERE `isfeatured`='yes' order by `date` DESC Limit 7");
     $portfolio_recent_raw = DB::select("SELECT * FROM `portfolio`  order by `date` DESC Limit 6");
     $achivements = DB::select("SELECT * FROM `certifications`");
     return view(

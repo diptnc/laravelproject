@@ -59,7 +59,7 @@ $musiclink="javascript:";
                     <!--  card  -->
                     <div class="card1">
                         <?php $card2_color="#4a65ff";?>
-                        <div class="card-image-2"><img
+                        <div class="card-image-2" ><img style="max-width: 99px;"
                                 src="{{ asset('assets/svg/cards/web-development.svg') }}" alt=""
                                 srcset=""></div>
                         <div class="card-element">

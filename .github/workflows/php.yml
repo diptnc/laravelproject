@@ -9,7 +9,7 @@ jobs:
     - name: FTP-Deploy-Action
       uses: SamKirkland/FTP-Deploy-Action@2.0.0
       env:
-        FTP_SERVER: ftp://195.201.204.153
+        FTP_SERVER: 195.201.204.153
         FTP_USERNAME: abcd@diptanuchakraborty.in
         FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
         ARGS: --delete
